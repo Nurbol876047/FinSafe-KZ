@@ -27,10 +27,10 @@ import { useLocalizedText } from '@/hooks/useLocale'
 import type { MediaPost } from '@/types'
 
 const sectionCards = [
-  { to: '/games', key: 'games', icon: Joystick, color: '#214B60' },
-  { to: '/academy', key: 'academy', icon: GraduationCap, color: '#303D6B' },
-  { to: '/championship', key: 'championship', icon: Trophy, color: '#49354E' },
-  { to: '/media', key: 'media', icon: Newspaper, color: '#294D49' },
+  { to: '/games', key: 'games', icon: Joystick },
+  { to: '/academy', key: 'academy', icon: GraduationCap },
+  { to: '/championship', key: 'championship', icon: Trophy },
+  { to: '/media', key: 'media', icon: Newspaper },
 ] as const
 
 function HomeSection({ title, viewAllTo, children }: { title: string; viewAllTo: string; children: ReactNode }) {
@@ -39,7 +39,7 @@ function HomeSection({ title, viewAllTo, children }: { title: string; viewAllTo:
     <section>
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-xl font-bold text-app-text">{title}</h2>
-        <Link to={viewAllTo} className="text-sm font-medium text-app-accent hover:underline">
+        <Link to={viewAllTo} className="text-sm font-medium text-app-primary hover:underline">
           {t('home.viewAll')}
         </Link>
       </div>
@@ -104,15 +104,14 @@ export default function HomePage() {
         </section>
 
         <section className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-          {sectionCards.map(({ to, key, icon: Icon, color }) => (
+          {sectionCards.map(({ to, key, icon: Icon }) => (
             <CardLink
               key={to}
               to={to}
               className="flex flex-col items-center gap-3 p-6 text-center"
-              style={{ backgroundColor: `${color}1A` }}
               aria-label={t(`home.sections.${key}.title`)}
             >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white/70 text-app-accent">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-app-primary/10 text-app-primary">
                 <Icon size={26} strokeWidth={1.75} />
               </div>
               <div>
@@ -163,9 +162,9 @@ export default function HomePage() {
             {tournamentsState.status === 'error' && <ErrorState onRetry={tournamentsState.retry} />}
             {tournamentsState.status === 'success' &&
               (activeTournament ? (
-                <Card className="flex flex-col gap-3 bg-section-championship/10 p-5">
+                <Card className="flex flex-col gap-3 p-5">
                   <div className="flex items-center justify-between">
-                    <Badge tone="accent">{t(`championship.status.${activeTournament.status}`)}</Badge>
+                    <Badge tone="primary">{t(`championship.status.${activeTournament.status}`)}</Badge>
                     <span className="text-xs text-app-text-secondary">
                       {new Date(activeTournament.startDate).toLocaleDateString('ru-RU')} —{' '}
                       {new Date(activeTournament.endDate).toLocaleDateString('ru-RU')}

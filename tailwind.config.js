@@ -1,3 +1,9 @@
+/** Reads a "R G B" CSS variable so Tailwind's opacity modifiers (e.g. bg-app-primary/10) keep working. */
+function withOpacity(variable) {
+  return ({ opacityValue }) =>
+    opacityValue === undefined ? `rgb(var(${variable}))` : `rgb(var(${variable}) / ${opacityValue})`
+}
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
@@ -5,19 +11,28 @@ export default {
     extend: {
       colors: {
         app: {
-          bg: '#F3F5F9',
-          surface: '#FFFFFF',
-          text: '#141B2C',
-          'text-secondary': '#55637A',
-          accent: '#0A7A61',
-          'accent-hover': '#086553',
-          'accent-soft': '#45DDB5',
+          bg: withOpacity('--color-background'),
+          surface: withOpacity('--color-background'),
+          card: withOpacity('--color-card'),
+          'card-border': withOpacity('--color-card-border'),
+          text: withOpacity('--color-text'),
+          'text-secondary': withOpacity('--color-text-secondary'),
+          primary: withOpacity('--color-primary'),
+          'primary-hover': withOpacity('--color-primary-hover'),
+          // Reserved for danger / fraud warnings only ("Опасно", "Мошенничество")
+          accent: withOpacity('--color-accent'),
+          'accent-text': withOpacity('--color-accent-text'),
         },
-        section: {
-          games: '#214B60',
-          academy: '#303D6B',
-          championship: '#49354E',
-          media: '#294D49',
+        badge: {
+          'easy-bg': withOpacity('--color-badge-easy-bg'),
+          'easy-text': withOpacity('--color-badge-easy-text'),
+          'easy-border': withOpacity('--color-badge-easy-border'),
+          'medium-bg': withOpacity('--color-badge-medium-bg'),
+          'medium-text': withOpacity('--color-badge-medium-text'),
+          'medium-border': withOpacity('--color-badge-medium-border'),
+          'hard-bg': withOpacity('--color-badge-hard-bg'),
+          'hard-text': withOpacity('--color-badge-hard-text'),
+          'hard-border': withOpacity('--color-badge-hard-border'),
         },
       },
       fontFamily: {
@@ -31,7 +46,7 @@ export default {
         DEFAULT: '200ms',
       },
       boxShadow: {
-        card: '0 10px 30px -15px rgba(0, 0, 0, 0.45)',
+        'card-hover': '0 12px 28px -16px rgba(17, 24, 39, 0.18)',
       },
       maxWidth: {
         app: '1200px',

@@ -141,10 +141,10 @@ function CourseContent({ course, progress, testOpen, onOpenTest, onTestComplete,
               <Link
                 key={lesson.id}
                 to={`/academy/${course.slug}/${lesson.id}`}
-                className="flex items-center gap-3 rounded-card border border-black/[0.08] bg-black/[0.02] px-4 py-3 transition duration-200 hover:bg-black/[0.05] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+                className="flex items-center gap-3 rounded-card border border-black/[0.08] bg-black/[0.02] px-4 py-3 transition duration-200 hover:bg-black/[0.05] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
               >
                 {isDone ? (
-                  <CheckCircle2 size={20} strokeWidth={1.75} className="shrink-0 text-app-accent" />
+                  <CheckCircle2 size={20} strokeWidth={1.75} className="shrink-0 text-app-primary" />
                 ) : (
                   <Circle size={20} strokeWidth={1.75} className="shrink-0 text-app-text-secondary" />
                 )}
@@ -160,7 +160,7 @@ function CourseContent({ course, progress, testOpen, onOpenTest, onTestComplete,
       <section>
         <h2 className="mb-3 text-lg font-semibold text-app-text">{t('academy.course.finalTest')}</h2>
         {!allLessonsDone ? (
-          <Card className="flex items-center gap-3 bg-black/[0.015] p-5">
+          <Card className="flex items-center gap-3 p-5">
             <FileQuestion size={24} strokeWidth={1.75} className="shrink-0 text-app-text-secondary" />
             <p className="text-sm text-app-text-secondary">{t('academy.course.finalTestLocked')}</p>
           </Card>
@@ -168,12 +168,12 @@ function CourseContent({ course, progress, testOpen, onOpenTest, onTestComplete,
           <FinalTest questions={course.finalTest} onComplete={onTestComplete} />
         ) : (
           <div className="flex flex-col gap-4">
-            <Card className="flex flex-col gap-3 bg-black/[0.015] p-5">
+            <Card className="flex flex-col gap-3 p-5">
               <p className="text-sm text-app-text-secondary">{t('academy.course.finalTestBody')}</p>
               {storedResult !== null && (
                 <div className="flex items-center gap-2 text-sm">
                   <span className="text-app-text-secondary">{t('academy.course.testResult')}:</span>
-                  <Badge tone={passed ? 'accent' : 'medium'}>
+                  <Badge tone={passed ? 'primary' : 'medium'}>
                     {storedResult}% — {passed ? t('academy.course.testPassed') : t('academy.course.testFailed')}
                   </Badge>
                 </div>

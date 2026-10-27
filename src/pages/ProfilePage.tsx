@@ -83,7 +83,7 @@ export default function ProfilePage() {
 
             return (
               <>
-                <Card className="flex flex-wrap items-center gap-5 bg-black/[0.015] p-5">
+                <Card className="flex flex-wrap items-center gap-5 p-5">
                   <div
                     className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full text-app-text"
                     style={{ backgroundColor: progress.profile.avatarColor }}
@@ -101,13 +101,13 @@ export default function ProfilePage() {
                             if (event.key === 'Enter') void handleSaveNickname()
                             if (event.key === 'Escape') setEditing(false)
                           }}
-                          className="rounded-full border border-black/10 bg-black/[0.04] px-4 py-2 text-base font-semibold text-app-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+                          className="rounded-full border border-black/10 bg-black/[0.04] px-4 py-2 text-base font-semibold text-app-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
                         />
                         <button
                           type="button"
                           onClick={handleSaveNickname}
                           aria-label={t('common.save')}
-                          className="flex h-9 w-9 items-center justify-center rounded-full bg-app-accent/10 text-app-accent transition duration-200 hover:bg-app-accent/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+                          className="flex h-9 w-9 items-center justify-center rounded-full bg-app-primary/10 text-app-primary transition duration-200 hover:bg-app-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
                         >
                           <Check size={16} strokeWidth={1.75} />
                         </button>
@@ -115,7 +115,7 @@ export default function ProfilePage() {
                           type="button"
                           onClick={() => setEditing(false)}
                           aria-label={t('common.cancel')}
-                          className="flex h-9 w-9 items-center justify-center rounded-full bg-black/[0.05] text-app-text-secondary transition duration-200 hover:bg-black/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+                          className="flex h-9 w-9 items-center justify-center rounded-full bg-black/[0.05] text-app-text-secondary transition duration-200 hover:bg-black/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
                         >
                           <X size={16} strokeWidth={1.75} />
                         </button>
@@ -130,7 +130,7 @@ export default function ProfilePage() {
                             setEditing(true)
                           }}
                           aria-label={t('profile.editNickname')}
-                          className="flex h-8 w-8 items-center justify-center rounded-full bg-black/[0.05] text-app-text-secondary transition duration-200 hover:bg-black/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+                          className="flex h-8 w-8 items-center justify-center rounded-full bg-black/[0.05] text-app-text-secondary transition duration-200 hover:bg-black/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
                         >
                           <Pencil size={14} strokeWidth={1.75} />
                         </button>
@@ -167,12 +167,12 @@ export default function ProfilePage() {
                           <Link
                             key={course.id}
                             to={`/academy/${course.slug}`}
-                            className="flex flex-wrap items-center justify-between gap-3 rounded-card border border-black/[0.08] bg-black/[0.02] px-4 py-3 transition duration-200 hover:bg-black/[0.05] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+                            className="flex flex-wrap items-center justify-between gap-3 rounded-card border border-black/[0.08] bg-black/[0.02] px-4 py-3 transition duration-200 hover:bg-black/[0.05] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
                           >
                             <span className="text-sm font-medium text-app-text">{text(course.title)}</span>
                             <div className="flex items-center gap-2 text-xs text-app-text-secondary">
                               <span>{t('academy.course.progress', { done: completed, total: course.lessons.length })}</span>
-                              {passed && <Badge tone="accent">{t('academy.course.testPassed')}</Badge>}
+                              {passed && <Badge tone="primary">{t('academy.course.testPassed')}</Badge>}
                             </div>
                           </Link>
                         )
@@ -205,7 +205,7 @@ export default function ProfilePage() {
                           >
                             <span className="text-sm font-medium text-app-text">{game ? text(game.title) : attempt.gameId}</span>
                             <div className="flex items-center gap-3 text-xs text-app-text-secondary">
-                              <span className="font-semibold text-app-accent">
+                              <span className="font-semibold text-app-primary">
                                 {attempt.score} / {attempt.maxScore}
                               </span>
                               <span>{dateFormatter.format(new Date(attempt.completedAt))}</span>
@@ -242,8 +242,8 @@ export default function ProfilePage() {
 
 function StatCard({ icon: Icon, value, label }: { icon: typeof User; value: number; label: string }) {
   return (
-    <Card className="flex items-center gap-3 bg-black/[0.015] p-4">
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-app-accent/10 text-app-accent">
+    <Card className="flex items-center gap-3 p-4">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-app-primary/10 text-app-primary">
         <Icon size={18} strokeWidth={1.75} />
       </div>
       <div>

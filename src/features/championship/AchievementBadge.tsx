@@ -11,9 +11,9 @@ export function AchievementBadge({ achievement, unlocked }: { achievement: Achie
   const Icon = achievementIconMap[achievement.icon] ?? Lock
 
   return (
-    <Card className={`flex flex-col items-center gap-2 bg-black/[0.015] p-4 text-center ${unlocked ? '' : 'opacity-50'}`}>
+    <Card className={`flex flex-col items-center gap-2 p-4 text-center ${unlocked ? '' : 'opacity-50'}`}>
       <div
-        className={`flex h-12 w-12 items-center justify-center rounded-full ${unlocked ? 'bg-app-accent/10 text-app-accent' : 'bg-black/[0.05] text-app-text-secondary'}`}
+        className={`flex h-12 w-12 items-center justify-center rounded-full ${unlocked ? 'bg-app-primary/10 text-app-primary' : 'bg-black/[0.05] text-app-text-secondary'}`}
       >
         {unlocked ? <Icon size={22} strokeWidth={1.75} /> : <Lock size={20} strokeWidth={1.75} />}
       </div>

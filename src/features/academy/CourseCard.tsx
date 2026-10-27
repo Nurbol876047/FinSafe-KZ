@@ -13,9 +13,9 @@ export function CourseCard({ course, completedLessons = 0 }: { course: Course; c
 
   if (course.status === 'coming-soon') {
     return (
-      <Card className="flex h-full flex-col gap-4 bg-section-academy/10 p-5 opacity-80">
+      <Card className="flex h-full flex-col gap-4 p-5 opacity-80">
         <div className="flex items-center justify-between">
-          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white/70 text-app-text-secondary">
+          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-black/[0.05] text-app-text-secondary">
             <BookOpen size={20} strokeWidth={1.75} />
           </div>
           <Badge tone="muted">{t('common.comingSoon')}</Badge>
@@ -29,9 +29,9 @@ export function CourseCard({ course, completedLessons = 0 }: { course: Course; c
   }
 
   return (
-    <CardLink to={`/academy/${course.slug}`} className="flex h-full flex-col gap-4 bg-section-academy/10 p-5" aria-label={text(course.title)}>
+    <CardLink to={`/academy/${course.slug}`} className="flex h-full flex-col gap-4 p-5" aria-label={text(course.title)}>
       <div className="flex items-center justify-between">
-        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white/70 text-app-accent">
+        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-app-primary/10 text-app-primary">
           <BookOpen size={20} strokeWidth={1.75} />
         </div>
         <Badge tone={course.difficulty}>{t(`common.difficulty.${course.difficulty}`)}</Badge>
@@ -51,15 +51,15 @@ export function CourseCard({ course, completedLessons = 0 }: { course: Course; c
         </span>
       </div>
       {isCompleted ? (
-        <span className="rounded-full bg-app-accent/10 px-3 py-1.5 text-center text-xs font-medium text-app-accent">
+        <span className="rounded-full bg-app-primary/10 px-3 py-1.5 text-center text-xs font-medium text-app-primary">
           {t('academy.card.completed')}
         </span>
       ) : completedLessons > 0 ? (
-        <span className="rounded-full bg-white/70 px-3 py-1.5 text-center text-xs font-medium text-app-text">
+        <span className="rounded-full bg-black/[0.05] px-3 py-1.5 text-center text-xs font-medium text-app-text">
           {t('academy.card.continue', { n: completedLessons + 1 })}
         </span>
       ) : (
-        <span className="rounded-full bg-white/60 px-3 py-1.5 text-center text-xs font-medium text-app-text-secondary">
+        <span className="rounded-full bg-black/[0.04] px-3 py-1.5 text-center text-xs font-medium text-app-text-secondary">
           {t('academy.card.start')}
         </span>
       )}

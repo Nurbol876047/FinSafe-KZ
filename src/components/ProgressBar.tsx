@@ -6,7 +6,7 @@ interface ProgressBarProps {
   label?: string
 }
 
-export function ProgressBar({ value, max = 100, color = '#0A7A61', className = '', label }: ProgressBarProps) {
+export function ProgressBar({ value, max = 100, color = 'rgb(var(--color-primary))', className = '', label }: ProgressBarProps) {
   const percent = Math.min(100, Math.max(0, (value / max) * 100))
   return (
     <div className={className}>

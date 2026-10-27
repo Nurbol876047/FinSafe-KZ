@@ -16,11 +16,11 @@ export function GameCard({ game }: { game: Game }) {
   return (
     <CardLink
       to={`/games/${game.slug}`}
-      className="group flex h-full flex-col gap-4 bg-section-games/10 p-5"
+      className="group flex h-full flex-col gap-4 p-5"
       aria-label={text(game.title)}
     >
       <div className="flex items-center justify-between">
-        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white/70 text-app-accent">
+        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-app-primary/10 text-app-primary">
           <Icon size={22} strokeWidth={1.75} />
         </div>
         <Badge tone={game.difficulty}>{t(`common.difficulty.${game.difficulty}`)}</Badge>

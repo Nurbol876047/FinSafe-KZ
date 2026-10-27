@@ -16,8 +16,8 @@ export function LanguageSwitch() {
         type="button"
         onClick={() => switchTo('kk')}
         aria-pressed={locale === 'kk'}
-        className={`rounded-full px-3 py-1.5 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent ${
-          locale === 'kk' ? 'bg-app-accent text-white' : 'text-app-text-secondary hover:text-app-text'
+        className={`rounded-full px-3 py-1.5 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary ${
+          locale === 'kk' ? 'bg-app-primary text-white' : 'text-app-text-secondary hover:text-app-text'
         }`}
       >
         ҚАЗ
@@ -26,8 +26,8 @@ export function LanguageSwitch() {
         type="button"
         onClick={() => switchTo('ru')}
         aria-pressed={locale === 'ru'}
-        className={`rounded-full px-3 py-1.5 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent ${
-          locale === 'ru' ? 'bg-app-accent text-white' : 'text-app-text-secondary hover:text-app-text'
+        className={`rounded-full px-3 py-1.5 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary ${
+          locale === 'ru' ? 'bg-app-primary text-white' : 'text-app-text-secondary hover:text-app-text'
         }`}
       >
         РУС

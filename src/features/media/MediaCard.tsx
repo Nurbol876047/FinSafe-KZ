@@ -13,7 +13,7 @@ export function MediaCard({ post, onOpen }: { post: MediaPost; onOpen: (post: Me
   const text = useLocalizedText()
 
   return (
-    <Card className="flex h-full flex-col gap-0 overflow-hidden bg-black/[0.015]">
+    <Card className="flex h-full flex-col gap-0 overflow-hidden">
       <div
         className="flex h-28 items-center justify-center"
         style={{ backgroundColor: `${post.coverColor}66` }}
@@ -27,7 +27,9 @@ export function MediaCard({ post, onOpen }: { post: MediaPost; onOpen: (post: Me
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex items-center justify-between gap-2">
-          <Badge tone="neutral">{t(`media.filters.categories.${post.category}`)}</Badge>
+          <Badge tone={post.category === 'scams' ? 'danger' : 'neutral'}>
+            {t(`media.filters.categories.${post.category}`)}
+          </Badge>
           <span className="text-xs text-app-text-secondary">{dateFormatter.format(new Date(post.publishedAt))}</span>
         </div>
         <h3 className="text-base font-semibold text-app-text">{text(post.title)}</h3>
@@ -35,7 +37,7 @@ export function MediaCard({ post, onOpen }: { post: MediaPost; onOpen: (post: Me
         <button
           type="button"
           onClick={() => onOpen(post)}
-          className="self-start rounded-full bg-black/[0.05] px-4 py-2 text-xs font-medium text-app-text transition duration-200 hover:bg-black/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+          className="self-start rounded-full bg-black/[0.05] px-4 py-2 text-xs font-medium text-app-text transition duration-200 hover:bg-black/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
         >
           {t('media.readMore')}
         </button>

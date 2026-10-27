@@ -4,19 +4,49 @@
 
 :root {
   color-scheme: light;
+
+  /* Brand */
+  --color-primary: 15 92 74; /* #0F5C4A */
+  --color-primary-hover: 11 71 57; /* #0B4739 */
+
+  /* Reserved for danger / fraud warnings only ("Опасно", "Мошенничество") */
+  --color-accent: 232 89 12; /* #E8590C */
+  --color-accent-text: 154 52 18; /* #9A3412 — readable on light accent tints */
+
+  /* Surfaces */
+  --color-background: 255 255 255; /* #FFFFFF */
+  --color-card: 255 255 255; /* #FFFFFF */
+  --color-card-border: 229 231 235; /* #E5E7EB */
+
+  /* Text */
+  --color-text: 17 24 39; /* #111827 */
+  --color-text-secondary: 107 114 128; /* #6B7280 */
+
+  /* Difficulty badges — soft tints */
+  --color-badge-easy-bg: 220 252 231;
+  --color-badge-easy-text: 22 101 52;
+  --color-badge-easy-border: 134 239 172;
+
+  --color-badge-medium-bg: 254 243 199;
+  --color-badge-medium-text: 146 64 14;
+  --color-badge-medium-border: 252 211 77;
+
+  --color-badge-hard-bg: 254 226 226;
+  --color-badge-hard-text: 153 27 27;
+  --color-badge-hard-border: 252 165 165;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background: #ffffff;
+  background: rgb(var(--color-background));
   overflow-x: hidden;
 }
 
 body {
   font-family: 'Ubuntu', 'Noto Sans', 'Segoe UI', sans-serif;
-  color: #141b2c;
+  color: rgb(var(--color-text));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,11 +60,11 @@ body {
 }
 
 ::selection {
-  background: rgba(10, 122, 97, 0.2);
+  background: rgb(var(--color-primary) / 0.2);
 }
 
 :focus-visible {
-  outline: 2px solid #0a7a61;
+  outline: 2px solid rgb(var(--color-primary));
   outline-offset: 2px;
   border-radius: 4px;
 }

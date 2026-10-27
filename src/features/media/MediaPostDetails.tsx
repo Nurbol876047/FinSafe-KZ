@@ -14,7 +14,9 @@ export function MediaPostDetails({ post }: { post: MediaPost }) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center gap-2">
-        <Badge tone="neutral">{t(`media.filters.categories.${post.category}`)}</Badge>
+        <Badge tone={post.category === 'scams' ? 'danger' : 'neutral'}>
+          {t(`media.filters.categories.${post.category}`)}
+        </Badge>
         <span className="text-xs text-app-text-secondary">{dateFormatter.format(new Date(post.publishedAt))}</span>
       </div>
       {post.type === 'video' ? (

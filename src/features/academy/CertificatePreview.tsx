@@ -25,11 +25,11 @@ export function CertificatePreview({ unlocked, courseTitle, nickname }: Certific
   }
 
   return (
-    <Card className="flex flex-col items-center gap-3 bg-gradient-to-b from-app-accent/10 to-transparent p-6 text-center">
-      <span className="rounded-full bg-app-accent/15 px-3 py-1 text-xs font-medium text-app-accent">
+    <Card className="flex flex-col items-center gap-3 bg-gradient-to-b from-app-primary/10 to-transparent p-6 text-center">
+      <span className="rounded-full bg-app-primary/15 px-3 py-1 text-xs font-medium text-app-primary">
         {t('academy.course.certificatePreview')}
       </span>
-      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-app-accent/15 text-app-accent">
+      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-app-primary/15 text-app-primary">
         <Award size={28} strokeWidth={1.75} />
       </div>
       <p className="text-sm text-app-text-secondary">

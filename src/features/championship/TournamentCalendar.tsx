@@ -7,8 +7,8 @@ import type { Tournament, TournamentStatus } from '@/types'
 
 const dateFormatter = new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'short' })
 
-const statusTone: Record<TournamentStatus, 'accent' | 'neutral' | 'muted'> = {
-  active: 'accent',
+const statusTone: Record<TournamentStatus, 'primary' | 'neutral' | 'muted'> = {
+  active: 'primary',
   upcoming: 'neutral',
   finished: 'muted',
 }
@@ -22,7 +22,7 @@ export function TournamentCalendar({ tournaments }: { tournaments: Tournament[] 
   return (
     <div className="flex flex-col gap-3">
       {sorted.map((tournament) => (
-        <Card key={tournament.id} className="flex flex-col gap-2 bg-black/[0.015] p-4">
+        <Card key={tournament.id} className="flex flex-col gap-2 p-4">
           <div className="flex items-center justify-between gap-2">
             <Badge tone={statusTone[tournament.status]}>{t(`championship.status.${tournament.status}`)}</Badge>
             <span className="text-xs text-app-text-secondary">

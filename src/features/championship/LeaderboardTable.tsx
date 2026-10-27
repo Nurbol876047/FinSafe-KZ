@@ -30,7 +30,7 @@ export function LeaderboardTable({ entries }: { entries: LeaderboardEntry[] }) {
                   <span className="text-app-text">{entry.name}</span>
                 </div>
               </td>
-              <td className="px-4 py-3 text-right font-semibold text-app-accent">{entry.score.toLocaleString('ru-RU')}</td>
+              <td className="px-4 py-3 text-right font-semibold text-app-primary">{entry.score.toLocaleString('ru-RU')}</td>
             </tr>
           ))}
         </tbody>

@@ -21,9 +21,9 @@ export function Tabs({ tabs, activeId, onChange, className = '' }: TabsProps) {
             role="tab"
             aria-selected={isActive}
             onClick={() => onChange(tab.id)}
-            className={`rounded-full px-4 py-2 text-sm font-medium transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent ${
+            className={`rounded-full px-4 py-2 text-sm font-medium transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary ${
               isActive
-                ? 'bg-app-accent text-white'
+                ? 'bg-app-primary text-white'
                 : 'bg-black/[0.04] text-app-text-secondary hover:bg-black/[0.08] hover:text-app-text'
             }`}
           >

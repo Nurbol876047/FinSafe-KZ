@@ -57,7 +57,7 @@ export default function MediaPage() {
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               placeholder={t('media.searchPlaceholder')}
-              className="w-full rounded-full border border-black/10 bg-black/[0.03] py-2.5 pl-10 pr-4 text-sm text-app-text placeholder:text-app-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+              className="w-full rounded-full border border-black/10 bg-black/[0.03] py-2.5 pl-10 pr-4 text-sm text-app-text placeholder:text-app-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
             />
           </div>
           <Tabs

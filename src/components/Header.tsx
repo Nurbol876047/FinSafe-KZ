@@ -20,9 +20,9 @@ export function Header() {
       <div className="flex items-center justify-between gap-4">
         <NavLink
           to="/"
-          className="flex items-center gap-2 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+          className="flex items-center gap-2 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
         >
-          <ShieldCheck className="text-app-accent" size={28} strokeWidth={1.75} />
+          <ShieldCheck className="text-app-primary" size={28} strokeWidth={1.75} />
           <span className="text-lg font-bold tracking-tight text-app-text">{t('app.name')}</span>
         </NavLink>
         <LanguageSwitch />
@@ -33,7 +33,7 @@ export function Header() {
             key={to}
             to={to}
             className={({ isActive }) =>
-              `flex shrink-0 items-center gap-1.5 rounded-full px-3.5 py-2 text-sm font-medium transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent ${
+              `flex shrink-0 items-center gap-1.5 rounded-full px-3.5 py-2 text-sm font-medium transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary ${
                 isActive
                   ? 'bg-black/[0.06] text-app-text'
                   : 'text-app-text-secondary hover:bg-black/[0.04] hover:text-app-text'

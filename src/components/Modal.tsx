@@ -42,7 +42,7 @@ export function Modal({ open, onClose, title, children }: ModalProps) {
             ref={closeRef}
             type="button"
             onClick={onClose}
-            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-app-text-secondary transition duration-200 hover:bg-black/[0.1] hover:text-app-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent"
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-app-text-secondary transition duration-200 hover:bg-black/[0.1] hover:text-app-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
           >
             <X size={16} strokeWidth={1.75} />
           </button>

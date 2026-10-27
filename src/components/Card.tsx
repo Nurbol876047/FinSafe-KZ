@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import type { CSSProperties, ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 
-const cardBase = 'rounded-card border border-black/[0.08]'
+const cardBase = 'rounded-card border border-app-card-border bg-app-card'
 
 interface CardProps {
   children: ReactNode
@@ -29,10 +29,10 @@ export function CardLink({ to, children, className = '', style, ...rest }: CardL
   return (
     <MotionLink
       to={to}
-      whileHover={{ y: -3, boxShadow: '0 12px 28px -14px rgba(20,27,44,0.22)' }}
+      whileHover={{ y: -3 }}
       whileTap={{ y: 0 }}
       transition={{ duration: 0.2 }}
-      className={`${cardBase} block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent ${className}`}
+      className={`${cardBase} block transition-shadow duration-200 hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary ${className}`}
       style={style}
       {...rest}
     >

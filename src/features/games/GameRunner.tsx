@@ -30,7 +30,7 @@ function optionVisualState(option: GameStepOption, selected: string[], revealed:
 
 const optionStateClasses: Record<string, string> = {
   default: 'border-black/10 bg-black/[0.02] hover:bg-black/[0.05]',
-  selected: 'border-app-accent bg-app-accent/10',
+  selected: 'border-app-primary bg-app-primary/10',
   correct: 'border-emerald-500/50 bg-emerald-500/10',
   incorrect: 'border-rose-500/50 bg-rose-500/10',
   missed: 'border-emerald-500/30 bg-transparent',
@@ -141,7 +141,7 @@ export function GameRunner({ game, onComplete }: GameRunnerProps) {
       </div>
       <ProgressBar value={Math.min(visitedCount, totalForProgress)} max={totalForProgress} color={game.accentColor} />
 
-      <Card className="flex flex-col gap-4 bg-black/[0.015] p-5 sm:p-6">
+      <Card className="flex flex-col gap-4 p-5 sm:p-6">
         {currentStep.context ? (
           <div className="flex flex-wrap items-center gap-2 text-xs text-app-text-secondary">
             {currentStep.context.channel ? <Badge tone="neutral">{text(currentStep.context.channel)}</Badge> : null}
@@ -175,7 +175,7 @@ export function GameRunner({ game, onComplete }: GameRunnerProps) {
                     type="button"
                     disabled={phase === 'revealed'}
                     onClick={() => handleToggle(option.id)}
-                    className={`flex items-center gap-3 rounded-card border px-4 py-3 text-left text-sm transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-accent disabled:cursor-default ${optionStateClasses[state]}`}
+                    className={`flex items-center gap-3 rounded-card border px-4 py-3 text-left text-sm transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary disabled:cursor-default ${optionStateClasses[state]}`}
                   >
                     <Icon size={18} strokeWidth={1.75} className="shrink-0 text-app-text-secondary" />
                     <span className="flex-1 text-app-text">{text(option.text)}</span>
@@ -190,8 +190,8 @@ export function GameRunner({ game, onComplete }: GameRunnerProps) {
         )}
 
         {phase === 'revealed' && (
-          <div className="rounded-card border border-app-accent/20 bg-app-accent/[0.06] p-4">
-            <p className="mb-1.5 text-sm font-semibold text-app-accent">{t('games.runner.explanationTitle')}</p>
+          <div className="rounded-card border border-app-primary/20 bg-app-primary/[0.06] p-4">
+            <p className="mb-1.5 text-sm font-semibold text-app-primary">{t('games.runner.explanationTitle')}</p>
             {chosenOption?.consequence ? (
               <p className="mb-2 text-sm text-app-text">{text(chosenOption.consequence)}</p>
             ) : null}
@@ -247,11 +247,11 @@ function ResultScreen({
   }
 
   return (
-    <Card className="flex flex-col items-center gap-4 bg-black/[0.015] p-8 text-center">
+    <Card className="flex flex-col items-center gap-4 p-8 text-center">
       <h2 className="text-xl font-bold text-app-text">{t('games.runner.resultTitle')}</h2>
       <div>
         <p className="text-sm text-app-text-secondary">{t('games.runner.yourScore')}</p>
-        <p className="text-4xl font-bold text-app-accent">
+        <p className="text-4xl font-bold text-app-primary">
           {score} / {maxScore}
         </p>
       </div>
