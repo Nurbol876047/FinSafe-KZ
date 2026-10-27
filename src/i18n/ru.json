@@ -1,0 +1,240 @@
+{
+  "app": {
+    "name": "FINSAFE KZ"
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "retry": "Повторить",
+    "errorTitle": "Не удалось загрузить данные",
+    "errorBody": "Проверьте соединение и попробуйте снова.",
+    "comingSoon": "Скоро",
+    "back": "Назад",
+    "next": "Далее",
+    "close": "Закрыть",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "minutesShort": "{{count}} мин",
+    "difficulty": {
+      "easy": "Легко",
+      "medium": "Средне",
+      "hard": "Сложно"
+    },
+    "questions_one": "{{count}} вопрос",
+    "questions_few": "{{count}} вопроса",
+    "questions_many": "{{count}} вопросов",
+    "questions_other": "{{count}} вопросов",
+    "steps_one": "{{count}} этап",
+    "steps_few": "{{count}} этапа",
+    "steps_many": "{{count}} этапов",
+    "steps_other": "{{count}} этапов",
+    "lessons_one": "{{count}} урок",
+    "lessons_few": "{{count}} урока",
+    "lessons_many": "{{count}} уроков",
+    "lessons_other": "{{count}} уроков",
+    "points_one": "{{count}} балл",
+    "points_few": "{{count}} балла",
+    "points_many": "{{count}} баллов",
+    "points_other": "{{count}} баллов",
+    "empty": {
+      "title": "Пока пусто",
+      "body": "Здесь появится контент совсем скоро."
+    }
+  },
+  "nav": {
+    "home": "Главная",
+    "games": "Игры",
+    "academy": "Академия",
+    "championship": "Чемпионат",
+    "media": "Медиа",
+    "profile": "Профиль",
+    "langSwitch": "Переключить язык"
+  },
+  "home": {
+    "title": "Проверь свою финансовую безопасность",
+    "subtitle": "Играй. Учись. Распознавай мошенников.",
+    "sections": {
+      "games": { "title": "Игры", "tagline": "Проверь себя в реалистичных сценариях" },
+      "academy": { "title": "Академия", "tagline": "Короткие уроки о финансовой безопасности" },
+      "championship": { "title": "Чемпионат", "tagline": "Соревнуйся и поднимайся в рейтинге" },
+      "media": { "title": "Медиа", "tagline": "Новости и разборы реальных схем" }
+    },
+    "popularGames": "Популярные игры",
+    "recommendedCourses": "Рекомендуемые курсы",
+    "currentChampionship": "Текущий чемпионат",
+    "topWeek": "Лучшие недели",
+    "latestMedia": "Последние видео",
+    "ctaTitle": "Готовы проверить свои знания?",
+    "ctaBody": "Начните с короткого курса или игры — это займёт всего несколько минут.",
+    "ctaButton": "Начать обучение",
+    "aboutTitle": "О проекте",
+    "aboutBody": "FINSAFE KZ — образовательная платформа о финансовой безопасности и профилактике мошенничества в Казахстане. Мы собрали реалистичные сценарии обмана, короткие уроки и соревнования, чтобы каждый мог научиться узнавать угрозу до того, как потеряет деньги.",
+    "viewAll": "Смотреть все"
+  },
+  "games": {
+    "pageTitle": "Игры",
+    "pageSubtitle": "Проверь, сможешь ли ты распознать мошенников в реалистичных ситуациях",
+    "filters": {
+      "all": "Все"
+    },
+    "card": {
+      "play": "Играть",
+      "questions": "Этапов",
+      "difficulty": "Сложность"
+    },
+    "runner": {
+      "step": "Этап {{current}} из {{total}}",
+      "submit": "Ответить",
+      "nextStep": "Следующий этап",
+      "finish": "Завершить",
+      "selectAtLeastOne": "Выберите хотя бы один вариант",
+      "explanationTitle": "Разбор ситуации",
+      "riskSigns": "Признаки риска",
+      "correctBehavior": "Как нужно поступить",
+      "resultTitle": "Игра завершена",
+      "yourScore": "Ваш результат",
+      "playAgain": "Пройти ещё раз",
+      "share": "Поделиться",
+      "shareCopied": "Ссылка скопирована",
+      "shareText": "Я прошёл игру «{{title}}» на FINSAFE KZ и набрал {{score}} из {{max}} баллов!",
+      "backToGames": "Все игры",
+      "resultGood": "Отличный результат! Вы уверенно распознаёте мошеннические схемы.",
+      "resultMedium": "Неплохо, но стоит повторить признаки мошенничества.",
+      "resultLow": "Советуем пройти уроки Академии перед повторной попыткой."
+    },
+    "types": {
+      "scam-or-not": "Scam or Not",
+      "detective": "Финансовый детектив",
+      "dropper": "Дроппер: опасное предложение",
+      "pyramid": "Финансовая пирамида"
+    }
+  },
+  "academy": {
+    "pageTitle": "Академия",
+    "pageSubtitle": "Короткие курсы о финансовой безопасности для разной аудитории",
+    "filters": {
+      "audience": "Аудитория",
+      "topic": "Тема",
+      "difficulty": "Сложность",
+      "all": "Все",
+      "audienceOptions": {
+        "school": "Школьники",
+        "student": "Студенты",
+        "adult": "Взрослые",
+        "senior": "Старшее поколение"
+      },
+      "topicOptions": {
+        "phishing": "Фишинг",
+        "credit": "Кредиты",
+        "investment": "Инвестиции",
+        "cards": "Карты и переводы",
+        "social-engineering": "Социальная инженерия",
+        "digital-hygiene": "Цифровая гигиена"
+      }
+    },
+    "card": {
+      "open": "Открыть курс",
+      "lessons": "Уроков",
+      "continue": "Продолжить с урока {{n}}",
+      "start": "Начать курс",
+      "completed": "Курс завершён"
+    },
+    "course": {
+      "lessonsTitle": "Уроки курса",
+      "finalTest": "Итоговый тест",
+      "finalTestLocked": "Доступен после прохождения всех уроков",
+      "finalTestBody": "Ответьте на вопросы, чтобы получить сертификат.",
+      "startTest": "Начать тест",
+      "progress": "Пройдено {{done}} из {{total}}",
+      "certificateTitle": "Сертификат",
+      "certificateLocked": "Доступен после 80% правильных ответов в итоговом тесте",
+      "certificatePreview": "Предпросмотр сертификата",
+      "certificateIssuedTo": "Выдан",
+      "certificateDocBody": "Образовательный документ проекта",
+      "certificateFor": "за успешное завершение курса",
+      "testResult": "Результат теста",
+      "testPassed": "Тест пройден",
+      "testFailed": "Попробуйте ещё раз",
+      "retryTest": "Пройти тест заново",
+      "testQuestionProgress": "Вопрос {{current}} из {{total}}",
+      "submitAnswer": "Ответить",
+      "nextQuestion": "Следующий вопрос",
+      "finishTest": "Завершить тест",
+      "selectAnOption": "Выберите вариант ответа"
+    },
+    "lesson": {
+      "goal": "Цель урока",
+      "explanation": "Объяснение",
+      "material": "Материал",
+      "example": "Практический пример",
+      "question": "Вопрос",
+      "conclusion": "Вывод",
+      "nextLesson": "Следующий урок",
+      "backToCourse": "К курсу",
+      "finishCourse": "К итоговому тесту"
+    }
+  },
+  "championship": {
+    "pageTitle": "Чемпионат",
+    "pageSubtitle": "Соревнуйтесь в знаниях финансовой безопасности",
+    "tabs": {
+      "week": "Неделя",
+      "month": "Месяц",
+      "season": "Сезон",
+      "teams": "Команды",
+      "institutions": "Учебные заведения"
+    },
+    "table": {
+      "rank": "Место",
+      "name": "Участник",
+      "score": "Баллы"
+    },
+    "achievements": "Достижения",
+    "calendar": "Календарь турниров",
+    "status": {
+      "upcoming": "Скоро",
+      "active": "Идёт сейчас",
+      "finished": "Завершён"
+    }
+  },
+  "media": {
+    "pageTitle": "Медиа",
+    "pageSubtitle": "Новости и разборы реальных схем мошенничества",
+    "searchPlaceholder": "Поиск публикаций",
+    "filters": {
+      "all": "Все темы",
+      "categories": {
+        "scams": "Схемы обмана",
+        "banking": "Банки",
+        "investments": "Инвестиции",
+        "digital-hygiene": "Цифровая гигиена",
+        "news": "Новости"
+      }
+    },
+    "readMore": "Читать",
+    "videoPlaceholder": "Видео скоро будет доступно",
+    "subtitlesPlaceholder": "Место для субтитров"
+  },
+  "profile": {
+    "pageTitle": "Профиль",
+    "editNickname": "Изменить псевдоним",
+    "coursesCompleted": "Пройдено курсов",
+    "gamesPlayed": "Сыграно игр",
+    "achievementsUnlocked": "Получено наград",
+    "coursesTitle": "Пройденные курсы",
+    "gamesTitle": "Результаты игр",
+    "achievementsTitle": "Награды",
+    "noCourses": "Вы пока не начали ни одного курса.",
+    "noGames": "Вы пока не играли ни в одну игру.",
+    "noAchievements": "Награды появятся после первых успехов.",
+    "goToAcademy": "Перейти в Академию",
+    "goToGames": "Перейти к играм"
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "body": "Возможно, она была перемещена или такой страницы не существует.",
+    "action": "На главную"
+  },
+  "footer": {
+    "rights": "FINSAFE KZ — образовательный проект по финансовой безопасности."
+  }
+}

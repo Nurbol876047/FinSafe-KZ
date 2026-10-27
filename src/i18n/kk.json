@@ -1,0 +1,232 @@
+{
+  "app": {
+    "name": "FINSAFE KZ"
+  },
+  "common": {
+    "loading": "Жүктелуде...",
+    "retry": "Қайталау",
+    "errorTitle": "Деректерді жүктеу мүмкін болмады",
+    "errorBody": "Байланысты тексеріп, қайта көріңіз.",
+    "comingSoon": "Жақында",
+    "back": "Артқа",
+    "next": "Келесі",
+    "close": "Жабу",
+    "save": "Сақтау",
+    "cancel": "Бас тарту",
+    "minutesShort": "{{count}} мин",
+    "difficulty": {
+      "easy": "Жеңіл",
+      "medium": "Орташа",
+      "hard": "Қиын"
+    },
+    "questions_one": "{{count}} сұрақ",
+    "questions_other": "{{count}} сұрақ",
+    "steps_one": "{{count}} кезең",
+    "steps_other": "{{count}} кезең",
+    "lessons_one": "{{count}} сабақ",
+    "lessons_other": "{{count}} сабақ",
+    "points_one": "{{count}} балл",
+    "points_other": "{{count}} балл",
+    "empty": {
+      "title": "Әзірше бос",
+      "body": "Мұнда контент жақында пайда болады."
+    }
+  },
+  "nav": {
+    "home": "Басты бет",
+    "games": "Ойындар",
+    "academy": "Академия",
+    "championship": "Чемпионат",
+    "media": "Медиа",
+    "profile": "Профиль",
+    "langSwitch": "Тілді ауыстыру"
+  },
+  "home": {
+    "title": "Қаржылық қауіпсіздігіңізді тексеріңіз",
+    "subtitle": "Ойна. Үйрен. Алаяқтарды тани біл.",
+    "sections": {
+      "games": { "title": "Ойындар", "tagline": "Өзіңді шынайы сценарийлерде тексер" },
+      "academy": { "title": "Академия", "tagline": "Қаржылық қауіпсіздік туралы қысқа сабақтар" },
+      "championship": { "title": "Чемпионат", "tagline": "Жарысып, рейтингте көтеріл" },
+      "media": { "title": "Медиа", "tagline": "Жаңалықтар және нақты схемалардың талдауы" }
+    },
+    "popularGames": "Танымал ойындар",
+    "recommendedCourses": "Ұсынылатын курстар",
+    "currentChampionship": "Ағымдағы чемпионат",
+    "topWeek": "Апта топ-5",
+    "latestMedia": "Соңғы бейнелер",
+    "ctaTitle": "Білімдеріңізді тексеруге дайынсыз ба?",
+    "ctaBody": "Қысқа курстан немесе ойыннан баста — бұл бірнеше минут алады.",
+    "ctaButton": "Оқуды бастау",
+    "aboutTitle": "Жоба туралы",
+    "aboutBody": "FINSAFE KZ — Қазақстандағы қаржылық қауіпсіздік және алаяқтықтың алдын алу туралы білім беру платформасы. Біз ақшаны жоғалтпай тұрып қауіпті тануға үйрену үшін шынайы алаяқтық сценарийлерін, қысқа сабақтар мен жарыстарды жинақтадық.",
+    "viewAll": "Барлығын көру"
+  },
+  "games": {
+    "pageTitle": "Ойындар",
+    "pageSubtitle": "Шынайы жағдайларда алаяқтарды тани алатыныңызды тексеріңіз",
+    "filters": {
+      "all": "Барлығы"
+    },
+    "card": {
+      "play": "Ойнау",
+      "questions": "Кезеңдер",
+      "difficulty": "Қиындық"
+    },
+    "runner": {
+      "step": "{{current}}/{{total}} кезең",
+      "submit": "Жауап беру",
+      "nextStep": "Келесі кезең",
+      "finish": "Аяқтау",
+      "selectAtLeastOne": "Кемінде бір нұсқа таңдаңыз",
+      "explanationTitle": "Жағдайды талдау",
+      "riskSigns": "Қауіп белгілері",
+      "correctBehavior": "Қалай әрекет ету керек",
+      "resultTitle": "Ойын аяқталды",
+      "yourScore": "Нәтижеңіз",
+      "playAgain": "Қайта ойнау",
+      "share": "Бөлісу",
+      "shareCopied": "Сілтеме көшірілді",
+      "shareText": "Мен FINSAFE KZ-де «{{title}}» ойынын ойнап, {{score}}/{{max}} балл жинадым!",
+      "backToGames": "Барлық ойындар",
+      "resultGood": "Тамаша нәтиже! Сіз алаяқтық схемаларын сенімді түрде танып білесіз.",
+      "resultMedium": "Жаман емес, бірақ алаяқтық белгілерін қайталаған жөн.",
+      "resultLow": "Қайта әрекет етер алдында Академия сабақтарын өтуді кеңес береміз."
+    },
+    "types": {
+      "scam-or-not": "Scam or Not",
+      "detective": "Қаржы детективі",
+      "dropper": "Дроппер: қауіпті ұсыныс",
+      "pyramid": "Қаржылық пирамида"
+    }
+  },
+  "academy": {
+    "pageTitle": "Академия",
+    "pageSubtitle": "Түрлі аудитория үшін қаржылық қауіпсіздік туралы қысқа курстар",
+    "filters": {
+      "audience": "Аудитория",
+      "topic": "Тақырып",
+      "difficulty": "Қиындық",
+      "all": "Барлығы",
+      "audienceOptions": {
+        "school": "Мектеп оқушылары",
+        "student": "Студенттер",
+        "adult": "Ересектер",
+        "senior": "Егде жастағы адамдар"
+      },
+      "topicOptions": {
+        "phishing": "Фишинг",
+        "credit": "Кредиттер",
+        "investment": "Инвестициялар",
+        "cards": "Карталар мен аударымдар",
+        "social-engineering": "Әлеуметтік инженерия",
+        "digital-hygiene": "Цифрлық гигиена"
+      }
+    },
+    "card": {
+      "open": "Курсты ашу",
+      "lessons": "Сабақ",
+      "continue": "{{n}}-сабақтан жалғастыру",
+      "start": "Курсты бастау",
+      "completed": "Курс аяқталды"
+    },
+    "course": {
+      "lessonsTitle": "Курс сабақтары",
+      "finalTest": "Қорытынды тест",
+      "finalTestLocked": "Барлық сабақтан өткен соң қолжетімді",
+      "finalTestBody": "Сертификат алу үшін сұрақтарға жауап беріңіз.",
+      "startTest": "Тестті бастау",
+      "progress": "{{total}}-дан {{done}} өтілді",
+      "certificateTitle": "Сертификат",
+      "certificateLocked": "Қорытынды тестте 80% дұрыс жауаптан кейін қолжетімді",
+      "certificatePreview": "Сертификатты алдын ала қарау",
+      "certificateIssuedTo": "Берілген",
+      "certificateDocBody": "Жобаның білім беру құжаты",
+      "certificateFor": "курсты сәтті тапсырғаны үшін",
+      "testResult": "Тест нәтижесі",
+      "testPassed": "Тест тапсырылды",
+      "testFailed": "Қайта көріңіз",
+      "retryTest": "Тестті қайта тапсыру",
+      "testQuestionProgress": "{{current}}/{{total}} сұрақ",
+      "submitAnswer": "Жауап беру",
+      "nextQuestion": "Келесі сұрақ",
+      "finishTest": "Тестті аяқтау",
+      "selectAnOption": "Жауап нұсқасын таңдаңыз"
+    },
+    "lesson": {
+      "goal": "Сабақ мақсаты",
+      "explanation": "Түсіндірме",
+      "material": "Материал",
+      "example": "Практикалық мысал",
+      "question": "Сұрақ",
+      "conclusion": "Қорытынды",
+      "nextLesson": "Келесі сабақ",
+      "backToCourse": "Курсқа оралу",
+      "finishCourse": "Қорытынды тестке"
+    }
+  },
+  "championship": {
+    "pageTitle": "Чемпионат",
+    "pageSubtitle": "Қаржылық қауіпсіздік білімі бойынша жарысыңыз",
+    "tabs": {
+      "week": "Апта",
+      "month": "Ай",
+      "season": "Сезон",
+      "teams": "Командалар",
+      "institutions": "Оқу орындары"
+    },
+    "table": {
+      "rank": "Орын",
+      "name": "Қатысушы",
+      "score": "Баллдар"
+    },
+    "achievements": "Жетістіктер",
+    "calendar": "Турнир күнтізбесі",
+    "status": {
+      "upcoming": "Жақында",
+      "active": "Қазір жүріп жатыр",
+      "finished": "Аяқталды"
+    }
+  },
+  "media": {
+    "pageTitle": "Медиа",
+    "pageSubtitle": "Нақты алаяқтық схемалары туралы жаңалықтар мен талдаулар",
+    "searchPlaceholder": "Жарияланымдарды іздеу",
+    "filters": {
+      "all": "Барлық тақырып",
+      "categories": {
+        "scams": "Алдау схемалары",
+        "banking": "Банктер",
+        "investments": "Инвестициялар",
+        "digital-hygiene": "Цифрлық гигиена",
+        "news": "Жаңалықтар"
+      }
+    },
+    "readMore": "Оқу",
+    "videoPlaceholder": "Бейне жақында қолжетімді болады",
+    "subtitlesPlaceholder": "Субтитрлер орны"
+  },
+  "profile": {
+    "pageTitle": "Профиль",
+    "editNickname": "Лақап атты өзгерту",
+    "coursesCompleted": "Өтілген курстар",
+    "gamesPlayed": "Ойналған ойындар",
+    "achievementsUnlocked": "Алынған жетістіктер",
+    "coursesTitle": "Өтілген курстар",
+    "gamesTitle": "Ойын нәтижелері",
+    "achievementsTitle": "Жетістіктер",
+    "noCourses": "Сіз әлі бір курсты да бастамадыңыз.",
+    "noGames": "Сіз әлі бір ойынды да ойнамадыңыз.",
+    "noAchievements": "Жетістіктер алғашқы табыстардан кейін пайда болады.",
+    "goToAcademy": "Академияға өту",
+    "goToGames": "Ойындарға өту"
+  },
+  "notFound": {
+    "title": "Бет табылмады",
+    "body": "Мүмкін, ол жылжытылған немесе мұндай бет жоқ.",
+    "action": "Басты бетке"
+  },
+  "footer": {
+    "rights": "FINSAFE KZ — қаржылық қауіпсіздік бойынша білім беру жобасы."
+  }
+}
