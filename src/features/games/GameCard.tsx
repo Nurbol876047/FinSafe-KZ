@@ -29,7 +29,7 @@ export function GameCard({ game }: { game: Game }) {
         <h3 className="mb-1 text-base font-semibold text-app-text">{text(game.title)}</h3>
         <p className="line-clamp-2 text-sm text-app-text-secondary">{text(game.description)}</p>
       </div>
-      <div className="flex items-center gap-4 text-xs text-app-text-secondary">
+      <div className="flex items-center gap-4 border-t border-app-card-border pt-3 text-xs text-app-text-secondary">
         <span className="flex items-center gap-1">
           <ListChecks size={14} strokeWidth={1.75} />
           {t('common.steps', { count: game.questionsCount })}

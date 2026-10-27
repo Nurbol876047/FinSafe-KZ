@@ -40,7 +40,7 @@ export function CourseCard({ course, completedLessons = 0 }: { course: Course; c
         <h3 className="mb-1 text-base font-semibold text-app-text">{text(course.title)}</h3>
         <p className="line-clamp-2 text-sm text-app-text-secondary">{text(course.description)}</p>
       </div>
-      <div className="flex items-center gap-4 text-xs text-app-text-secondary">
+      <div className="flex items-center gap-4 border-t border-app-card-border pt-3 text-xs text-app-text-secondary">
         <span className="flex items-center gap-1">
           <BookOpen size={14} strokeWidth={1.75} />
           {t('common.lessons', { count: course.lessons.length })}

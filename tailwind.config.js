@@ -12,7 +12,7 @@ export default {
       colors: {
         app: {
           bg: withOpacity('--color-background'),
-          surface: withOpacity('--color-background'),
+          surface: withOpacity('--color-surface'),
           card: withOpacity('--color-card'),
           'card-border': withOpacity('--color-card-border'),
           text: withOpacity('--color-text'),
@@ -20,6 +20,9 @@ export default {
           primary: withOpacity('--color-primary'),
           'primary-hover': withOpacity('--color-primary-hover'),
           'primary-soft': withOpacity('--color-primary-soft'),
+          navy: withOpacity('--color-navy'),
+          'navy-subtle': withOpacity('--color-navy-subtle'),
+          link: withOpacity('--color-link'),
           // Reserved for danger / fraud warnings only ("Опасно", "Мошенничество")
           accent: withOpacity('--color-accent'),
           'accent-text': withOpacity('--color-accent-text'),

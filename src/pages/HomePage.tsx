@@ -39,7 +39,7 @@ function HomeSection({ title, viewAllTo, children }: { title: string; viewAllTo:
     <section>
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-xl font-bold text-app-text">{title}</h2>
-        <Link to={viewAllTo} className="text-sm font-medium text-app-primary hover:underline">
+        <Link to={viewAllTo} className="text-sm font-medium text-app-link hover:underline">
           {t('home.viewAll')}
         </Link>
       </div>
@@ -95,15 +95,25 @@ export default function HomePage() {
         <meta property="og:locale" content="ru_RU" />
       </Helmet>
 
-      <Container className="flex flex-col gap-14 pb-16">
-        <section className="pt-6 text-center sm:pt-10">
-          <h1 className="mx-auto max-w-2xl text-3xl font-bold leading-tight text-app-text sm:text-4xl">
+      <section className="bg-gradient-to-br from-app-navy to-app-primary pt-14 pb-20 text-center sm:pt-20 sm:pb-28">
+        <Container>
+          <h1 className="mx-auto max-w-2xl text-3xl font-bold leading-tight text-white sm:text-4xl">
             {t('home.title')}
           </h1>
-          <p className="mt-3 text-app-text-secondary">{t('home.subtitle')}</p>
-        </section>
+          <p className="mx-auto mt-3 max-w-xl text-app-navy-subtle">{t('home.subtitle')}</p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Link to="/academy">
+              <Button variant="heroPrimary">{t('home.ctaButton')}</Button>
+            </Link>
+            <Link to="/games">
+              <Button variant="heroOutline">{t('home.heroStartTest')}</Button>
+            </Link>
+          </div>
+        </Container>
+      </section>
 
-        <section className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <Container className="flex flex-col gap-14 pb-16">
+        <section className="-mt-12 grid grid-cols-2 gap-4 sm:-mt-16 lg:grid-cols-4">
           {sectionCards.map(({ to, key, icon: Icon }) => (
             <CardLink
               key={to}
