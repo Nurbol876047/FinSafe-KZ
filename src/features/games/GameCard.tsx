@@ -20,7 +20,7 @@ export function GameCard({ game }: { game: Game }) {
       aria-label={text(game.title)}
     >
       <div className="flex items-center justify-between">
-        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-app-primary/10 text-app-primary">
+        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-app-primary-soft text-app-primary">
           <Icon size={22} strokeWidth={1.75} />
         </div>
         <Badge tone={game.difficulty}>{t(`common.difficulty.${game.difficulty}`)}</Badge>

@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 export type BadgeTone = 'primary' | 'neutral' | 'muted' | 'easy' | 'medium' | 'hard' | 'danger'
 
 const tones: Record<BadgeTone, string> = {
-  primary: 'bg-app-primary/10 text-app-primary border border-app-primary/25',
+  primary: 'bg-app-primary-soft text-app-primary border border-app-primary/25',
   neutral: 'bg-black/[0.04] text-app-text-secondary border border-black/10',
   muted: 'bg-black/[0.03] text-app-text-secondary/80 border border-black/[0.08]',
   easy: 'bg-badge-easy-bg text-badge-easy-text border border-badge-easy-border',

@@ -31,7 +31,7 @@ export function CourseCard({ course, completedLessons = 0 }: { course: Course; c
   return (
     <CardLink to={`/academy/${course.slug}`} className="flex h-full flex-col gap-4 p-5" aria-label={text(course.title)}>
       <div className="flex items-center justify-between">
-        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-app-primary/10 text-app-primary">
+        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-app-primary-soft text-app-primary">
           <BookOpen size={20} strokeWidth={1.75} />
         </div>
         <Badge tone={course.difficulty}>{t(`common.difficulty.${course.difficulty}`)}</Badge>
@@ -51,7 +51,7 @@ export function CourseCard({ course, completedLessons = 0 }: { course: Course; c
         </span>
       </div>
       {isCompleted ? (
-        <span className="rounded-full bg-app-primary/10 px-3 py-1.5 text-center text-xs font-medium text-app-primary">
+        <span className="rounded-full bg-app-primary-soft px-3 py-1.5 text-center text-xs font-medium text-app-primary">
           {t('academy.card.completed')}
         </span>
       ) : completedLessons > 0 ? (

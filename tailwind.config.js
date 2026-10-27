@@ -19,6 +19,7 @@ export default {
           'text-secondary': withOpacity('--color-text-secondary'),
           primary: withOpacity('--color-primary'),
           'primary-hover': withOpacity('--color-primary-hover'),
+          'primary-soft': withOpacity('--color-primary-soft'),
           // Reserved for danger / fraud warnings only ("Опасно", "Мошенничество")
           accent: withOpacity('--color-accent'),
           'accent-text': withOpacity('--color-accent-text'),

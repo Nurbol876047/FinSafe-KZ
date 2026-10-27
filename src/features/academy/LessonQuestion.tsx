@@ -52,7 +52,7 @@ export function LessonQuestion({ question, answered, onAnswer }: LessonQuestionP
           }
           const stateClasses: Record<typeof state, string> = {
             default: 'border-black/10 bg-black/[0.02] hover:bg-black/[0.05]',
-            selected: 'border-app-primary bg-app-primary/10',
+            selected: 'border-app-primary bg-app-primary-soft',
             correct: 'border-emerald-500/50 bg-emerald-500/10',
             incorrect: 'border-rose-500/50 bg-rose-500/10',
             missed: 'border-emerald-500/30 bg-transparent',
@@ -77,7 +77,7 @@ export function LessonQuestion({ question, answered, onAnswer }: LessonQuestionP
       {validationError && <p className="text-sm text-rose-600">{t('academy.course.selectAnOption')}</p>}
 
       {revealed ? (
-        <div className="rounded-card border border-app-primary/20 bg-app-primary/[0.06] p-4">
+        <div className="rounded-card border border-app-primary/20 bg-app-primary-soft p-4">
           <p className="text-sm leading-relaxed text-app-text-secondary">{text(question.explanation)}</p>
         </div>
       ) : (

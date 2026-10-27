@@ -30,7 +30,7 @@ function optionVisualState(option: GameStepOption, selected: string[], revealed:
 
 const optionStateClasses: Record<string, string> = {
   default: 'border-black/10 bg-black/[0.02] hover:bg-black/[0.05]',
-  selected: 'border-app-primary bg-app-primary/10',
+  selected: 'border-app-primary bg-app-primary-soft',
   correct: 'border-emerald-500/50 bg-emerald-500/10',
   incorrect: 'border-rose-500/50 bg-rose-500/10',
   missed: 'border-emerald-500/30 bg-transparent',
@@ -190,7 +190,7 @@ export function GameRunner({ game, onComplete }: GameRunnerProps) {
         )}
 
         {phase === 'revealed' && (
-          <div className="rounded-card border border-app-primary/20 bg-app-primary/[0.06] p-4">
+          <div className="rounded-card border border-app-primary/20 bg-app-primary-soft p-4">
             <p className="mb-1.5 text-sm font-semibold text-app-primary">{t('games.runner.explanationTitle')}</p>
             {chosenOption?.consequence ? (
               <p className="mb-2 text-sm text-app-text">{text(chosenOption.consequence)}</p>

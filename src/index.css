@@ -6,8 +6,9 @@
   color-scheme: light;
 
   /* Brand */
-  --color-primary: 15 92 74; /* #0F5C4A */
-  --color-primary-hover: 11 71 57; /* #0B4739 */
+  --color-primary: 14 116 144; /* #0E7490 */
+  --color-primary-hover: 21 94 117; /* #155E75 */
+  --color-primary-soft: 236 254 255; /* #ECFEFF — icon backgrounds and highlights */
 
   /* Reserved for danger / fraud warnings only ("Опасно", "Мошенничество") */
   --color-accent: 232 89 12; /* #E8590C */

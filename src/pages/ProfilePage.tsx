@@ -107,7 +107,7 @@ export default function ProfilePage() {
                           type="button"
                           onClick={handleSaveNickname}
                           aria-label={t('common.save')}
-                          className="flex h-9 w-9 items-center justify-center rounded-full bg-app-primary/10 text-app-primary transition duration-200 hover:bg-app-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
+                          className="flex h-9 w-9 items-center justify-center rounded-full bg-app-primary-soft text-app-primary transition duration-200 hover:bg-app-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-primary"
                         >
                           <Check size={16} strokeWidth={1.75} />
                         </button>
@@ -243,7 +243,7 @@ export default function ProfilePage() {
 function StatCard({ icon: Icon, value, label }: { icon: typeof User; value: number; label: string }) {
   return (
     <Card className="flex items-center gap-3 p-4">
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-app-primary/10 text-app-primary">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-app-primary-soft text-app-primary">
         <Icon size={18} strokeWidth={1.75} />
       </div>
       <div>
